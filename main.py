@@ -4,7 +4,7 @@ import streamlit as st
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
 
-st.title("💬 Chatbot")
+st.title("💬 Elisza - Your chatbot therapist")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "system", "content": "Please simulate an interaction with a compassionate "
                                                                  "therapist guided by the Rogerian approach. Address "
